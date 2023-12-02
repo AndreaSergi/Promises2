@@ -32,7 +32,7 @@ function fetchUserData() {
   
 fetchUserData()
 .then((userData) => {
-    console.log(userData.name);
+    console.log(`User: ${userData.name}`);
     return fetchUserPosts(userData.id, userData.name);
 })
 .then((userPosts) => {
